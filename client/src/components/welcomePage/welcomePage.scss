@@ -1,0 +1,34 @@
+#wp-container {
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  button {
+    margin-top: 20vh;
+    background-color: #70949d;
+    height: 84px;
+    width: 300px;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 3.8px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 576px) {
+  #wp-container {
+    background-size: contain;
+    background-position: bottom;
+    button {
+      margin-top: 40vh;
+    }
+  }
+}

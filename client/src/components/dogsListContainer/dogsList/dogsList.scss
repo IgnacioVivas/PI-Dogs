@@ -1,0 +1,85 @@
+.dogs-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 300px;
+  .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    h2 {
+      color: #414141;
+      font-size: 43px;
+      line-height: 39px;
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: 0px;
+      text-transform: capitalize;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    h3 {
+      color: #414141;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 30px;
+      line-height: 40px;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+  }
+  .dogs-list {
+    width: 90%;
+    display: grid;
+    row-gap: 35px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    #filterBug {
+      font-size: 20px;
+      text-transform: uppercase;
+      position: absolute;
+      background-color: #70949d52;
+      padding: 10px 32px;
+      border-radius: 5px;
+      border: 1px solid #70949d;
+      transform: translateY(-30px);
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .dogs-list-container {
+    .dogs-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .dogs-list-container {
+    .dogs-list {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .dogs-list-container {
+    .title-container {
+      padding-top: 0;
+    }
+    .dogs-list {
+      #filterBug {
+        font-size: 18px;
+        width: 90%;
+        padding: 7px 22px;
+        text-align: center;
+      }
+    }
+  }
+}

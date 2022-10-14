@@ -1,0 +1,25 @@
+.arrowUp-container {
+  position: fixed;
+  bottom: 70px;
+  right: 40px;
+  width: 52px;
+  height: 52px;
+  line-height: 52px;
+  text-decoration: none;
+  border-radius: 52px;
+  transition: all 0.2s ease 0s;
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  border: 2px solid #e8e8e8;
+  background: 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  .arrowUp-container {
+    display: none;
+  }
+}

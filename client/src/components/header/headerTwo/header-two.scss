@@ -1,0 +1,37 @@
+.header-two {
+  height: 50vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-size: 43px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 65px;
+  }
+  span {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Josefin Sans';
+    line-height: 40px;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header-two {
+    h1 {
+      font-size: 30px;
+      text-align: center;
+    }
+    span {
+      text-align: center;
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+}

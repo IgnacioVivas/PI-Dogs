@@ -1,0 +1,33 @@
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  .pagination {
+    display: flex;
+    border: 1px solid #eeedee;
+    .page-item {
+      border-right: 1px solid #eeedee;
+      padding: 6px 14px;
+      background-color: #444444;
+      list-style: none;
+      cursor: pointer;
+      .page-link {
+        color: white;
+        text-decoration: none;
+        &:last-of-type {
+          border-right: unset;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .pagination-container {
+    .pagination {
+      width: 90%;
+      overflow-x: scroll;
+    }
+  }
+}
