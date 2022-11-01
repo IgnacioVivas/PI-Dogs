@@ -6,13 +6,27 @@ const path = require('path');
 // const { DB_USER, DB_PASSWORD, DB_HOST, DB_URL } = require('./config');
 const { DB_URL } = process.env;
 
-const sequelize = new Sequelize(DB_URL, {
-  logging: false, // set to console.log to see the raw SQL queries
-  native: false, // lets Sequelize know we can use pg-native for ~30% more speed
+// const sequelize = new Sequelize(DB_URL, {
+//   logging: false, // set to console.log to see the raw SQL queries
+//   native: false, // lets Sequelize know we can use pg-native for ~30% more speed
+//   dialectOptions: {
+//     ssl: {
+//       require: true,
+//       rejectUnauthorized: false,
+//     },
+//   },
+// });
+const sequelize = new Sequelize({
+  database: 'railway',
+  username: 'postgres',
+  password: 'e4SQObirEkBWZlJEOg2K',
+  host: 'containers-us-west-74.railway.app',
+  port: 7820,
+  dialect: 'postgres',
   dialectOptions: {
     ssl: {
       require: true,
-      rejectUnauthorized: false,
+      rejectUnauthorized: false, // <<<<<<< YOU NEED THIS
     },
   },
 });
